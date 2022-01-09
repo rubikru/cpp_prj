@@ -44,3 +44,4 @@ udp.o: include/udp.cpp
 
 data.o: include/data.cpp 
 	g++ $(CPPFLAGS) -c -g3 -std=c++11 -o data.o include/data.cpp $(AMFLAGS)
+
