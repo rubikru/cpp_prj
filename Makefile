@@ -39,9 +39,9 @@ client.o: client/client.cpp
 server.o: server/server.cpp 
 	g++ $(CPPFLAGS) -g3 -std=c++11 -o server.o udp.o data.o server/server.cpp $(AMFLAGS)
 
-udp.o: include/udp.cpp 
-	g++ $(CPPFLAGS) -c -g3 -std=c++11 -o udp.o include/udp.cpp $(AMFLAGS)
+udp.o: classes/udp.cpp 
+	g++ $(CPPFLAGS) -c -g3 -std=c++11 -o udp.o classes/udp.cpp $(AMFLAGS)
 
-data.o: include/data.cpp 
-	g++ $(CPPFLAGS) -c -g3 -std=c++11 -o data.o include/data.cpp $(AMFLAGS)
+data.o: classes/data.cpp 
+	g++ $(CPPFLAGS) -c -g3 -std=c++11 -o data.o classes/data.cpp $(AMFLAGS)
 
